@@ -16,7 +16,18 @@ public class FibonacciLastDigit {
         return s2;
     }
 
-
+    private static int betterLastDigit(int n) {
+        n = n%60;
+        if (n <= 1) return n;
+        int s1 = 0;
+        int s2 = 1;
+        for (int i = 2; i < n+1; i++) {
+            int temp = s1;
+            s1 = s2;
+            s2 = (s1 + temp)%10;
+        }
+        return s2;
+    }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
