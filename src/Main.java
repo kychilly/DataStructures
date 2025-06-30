@@ -1,7 +1,5 @@
-import java.util.Scanner;
+//Call the methods directly from the week packages
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {//832564823476
-    //nothing to see here
+public class Main {
+
 }
