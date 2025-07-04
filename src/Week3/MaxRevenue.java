@@ -17,15 +17,14 @@ public class MaxRevenue {
             clicks[i] = scanner.nextInt();
         }
         System.out.println(MaxRev(prices, clicks));
+    }
 
-        }
-
-    public static int MaxRev(int[] prices, int[] clicks) {
+    public static long MaxRev(int[] prices, int[] clicks) {
         Arrays.sort(prices);
         Arrays.sort(clicks);
-        int sum = 0;
+        long sum = 0;
         for (int i = 0; i < prices.length; i++) {
-            sum += prices[i] * clicks[i];
+            sum += (long) prices[i] * clicks[i];
         }
         return sum;
     }
